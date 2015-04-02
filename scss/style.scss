@@ -1,0 +1,59 @@
+@import "normalize";
+@import "main";
+@import url("//hello.myfonts.net/count/2c6f59");
+
+$lgreen: #a7bba5;
+$dgreen: #132225;
+$cream: #e8e6db;
+
+* {
+	box-sizing: border-box;
+	position: relative;
+
+}
+
+::selection {
+    background: $lgreen; /* Safari */
+    }
+::-moz-selection {
+    background: $lgreen; /* Firefox */
+}
+
+///end icomoon///
+
+
+body {
+    background-color: $lgreen;
+    position: relative;
+}
+
+h2, h3, h4, h5, p, a, li, button {
+    font-family: 'Aller', Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+a {
+    text-decoration:none;
+    text-align: center;
+}
+
+
+h1 {
+    font-family: 'Monroe', Arial, sans-serif;
+    font-weight:normal;
+    text-align: center;
+}
+
+main {
+    background-color: $dgreen;
+    margin: 20px 20px 0 20px;
+    height:100%
+}
+
+aside {
+    background-color: $cream;
+    margin: 0 20px 20px 20px;
+    height: 100px;
+}
+
