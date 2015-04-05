@@ -24,54 +24,54 @@
 
 @font-face {
     font-family: 'Monroe';
-    src: url('fonts/21EE4D_0_0.eot');
-    src: url('fonts/21EE4D_0_0.eot?#iefix') format('embedded-opentype'),
-         url('fonts/21EE4D_0_0.woff') format('woff'),
-         url('fonts/21EE4D_0_0.ttf') format('truetype');
+    src: url('../fonts/21EE4D_0_0.eot');
+    src: url('../fonts/21EE4D_0_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/21EE4D_0_0.woff') format('woff'),
+         url('../fonts/21EE4D_0_0.ttf') format('truetype');
 }
 
 .Monroe {font-family: 'Monroe';}
 
 @font-face {
     font-family: 'Aller';
-    src: url('fonts/aller_it-webfont.eot');
-    src: url('fonts/aller_it-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/aller_it-webfont.woff') format('woff'),
-         url('fonts/aller_it-webfont.ttf') format('truetype'),
-         url('fonts/aller_it-webfont.svg#AllerItalic') format('svg');
+    src: url('../fonts/aller_it-webfont.eot');
+    src: url('../fonts/aller_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_it-webfont.woff') format('woff'),
+         url('../fonts/aller_it-webfont.ttf') format('truetype'),
+         url('../fonts/aller_it-webfont.svg#AllerItalic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Aller';
-    src: url('fonts/aller_bd-webfont.eot');
-    src: url('fonts/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/aller_bd-webfont.woff') format('woff'),
-         url('fonts/aller_bd-webfont.ttf') format('truetype'),
-         url('fonts/aller_bd-webfont.svg#AllerBold') format('svg');
+    src: url('../fonts/aller_bd-webfont.eot');
+    src: url('../fonts/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_bd-webfont.woff') format('woff'),
+         url('../fonts/aller_bd-webfont.ttf') format('truetype'),
+         url('../fonts/aller_bd-webfont.svg#AllerBold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Aller';
-    src: url('fonts/aller_bdit-webfont.eot');
-    src: url('fonts/aller_bdit-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/aller_bdit-webfont.woff') format('woff'),
-         url('fonts/aller_bdit-webfont.ttf') format('truetype'),
-         url('fonts/aller_bdit-webfont.svg#AllerBoldItalic') format('svg');
+    src: url('../fonts/aller_bdit-webfont.eot');
+    src: url('../fonts/aller_bdit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_bdit-webfont.woff') format('woff'),
+         url('../fonts/aller_bdit-webfont.ttf') format('truetype'),
+         url('../fonts/aller_bdit-webfont.svg#AllerBoldItalic') format('svg');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Aller';
-    src: url('fonts/aller_rg-webfont.eot');
-    src: url('fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/aller_rg-webfont.woff') format('woff'),
-         url('fonts/aller_rg-webfont.ttf') format('truetype'),
-         url('fonts/aller_rg-webfont.svg#AllerRegular') format('svg');
+    src: url('../fonts/aller_rg-webfont.eot');
+    src: url('../fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_rg-webfont.woff') format('woff'),
+         url('../fonts/aller_rg-webfont.ttf') format('truetype'),
+         url('../fonts/aller_rg-webfont.svg#AllerRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -80,8 +80,52 @@
 
 $lgreen: #a7bba5;
 $dgreen: #132225;
+$mgreen: #717c70;
 $cream: #e8e6db;
 $red: #b2322d;
+
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?1xqjhg');
+    src:url('../fonts/icomoon.eot?#iefix1xqjhg') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?1xqjhg') format('woff'),
+        url('../fonts/icomoon.ttf?1xqjhg') format('truetype'),
+        url('../fonts/icomoon.svg?1xqjhg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+    content: "\e600";
+}
+
+.icon-twitter:before {
+    content: "\ea91";
+}
+
+.icon-dribbble:before {
+    content: "\eaa6";
+}
+
+.icon-github:before {
+    content: "\eab4";
+}
 
 * {
 	box-sizing: border-box;
@@ -98,6 +142,9 @@ $red: #b2322d;
 
 ///end icomoon///
 
+html, body {
+    height: 100%;
+}
 
 body {
     background-color: $lgreen;
@@ -115,16 +162,18 @@ h1, h2, h3, h4, h5, p, a, li, button {
 
 main {
     background-color: $dgreen;
-    margin: 20px 20px 0 20px;
-    height:100%;
-    width: 100%;
+    margin: 2% 2% 0 2%;
+    height: 88%;
+    width: 96%;
 }
 
 aside {
     background-color: $cream;
-    margin: 0 20px 20px 20px;
-    height: 100px;
-    width:100%;
+    margin: 0 2% 2% 2%;
+    height: 8%;
+    width: 96%;
+
+
 }
 
 .logo {
@@ -139,26 +188,28 @@ h1 {
     color: $lgreen;
     font-size: 3.6em;
     margin:0;
-    text-shadow: 4px 2px #101616;
+    text-shadow: 6px 2px #101616;
+    padding-top: 1em;
 }
 
 h2 {
     color: $lgreen;
     font-size: 2.4em;
     margin: 0;
-    text-shadow: 4px 2px #101616;
+    text-shadow: 6px 2px #101616;
 }
 
 h3 {
     color: $lgreen;
     font-size: 1.5em;
     margin: 0;
-    text-shadow: 4px 2px #101616;
+    text-shadow: 6px 2px #101616;
 }
+
+
 
 .plant {
     margin-left: 44%;
-    width: 80%;
     padding: 2em 0;
 
     
@@ -188,7 +239,52 @@ h3 {
         animation-delay: 3s;
         -webkit-animation-fill-mode: forwards;
     }    
+
+    .shadow-left {
+        position: absolute;
+        bottom:2.7em;
+        left: -1.563em;
+        animation-name: lshadow;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    .shadow-right {
+        position: absolute;
+        bottom:3.2em;
+        left: 8.5em;
+        animation-name: rshadow;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+
 }
+
+
+
+@keyframes lshadow{
+  0%   { transform: translateX(0%) scale(.8,.8); }
+  10%  { transform: translateX(-86%) scale(1.05,1.05); }
+  20%  { transform: translateX(-20%) scale(1.1,1.1); }
+  37%  { transform: translateX(-75%) scale(1.2,1.2); }
+  58%  { transform: translateX(-45%) scale(1.3,1.3); }
+  75%  { transform: translateX(-70%) scale(1.4,1.4); }
+  100% { transform: translateX(-45%) scale(1.5,1.5); }
+}
+
+@keyframes rshadow{
+  0%   { transform: translateX(0%) scale(1,1); }
+  17%  { transform: translateX(100%) scale(1.1,1.1); }
+  35%  { transform: translateX(39%) scale(1.2,1.2); }
+  55%  { transform: translateX(112%) scale(1.3,1.3); }
+  68%  { transform: translateX(25%) scale(1.35,1.35); }
+  81%  { transform: translateX(125%) scale(1.4,1.4); }
+  100% { transform: translateX(45%) scale(1.5,1.5); }
+}
+
 
 @keyframes lleaf-falls{
   0%   { transform: translateX(0%) translateY(0%) rotate(0deg); }
@@ -207,7 +303,7 @@ h3 {
   55%  { transform: translateX(112%) translateY(280%) rotate(10deg); }
   68%  { transform: translateX(25%) translateY(450%) rotate(28deg); }
   81%  { transform: translateX(125%) translateY(640%) rotate(2deg); }
-  100% { transform: translateX(45%) translateY(820%) rotate(18deg); }
+  100% { transform: translateX(45%) translateY(820%) rotate(-10deg); }
 }
 
 
@@ -215,15 +311,37 @@ h3 {
     width: 30%;
     text-align:center;
 
+
     a {
+        text-decoration:none;
         text-align: center;
         font-size: 1em;
         color: $lgreen;
-        display:block;
+        display:inline-block;
+
+
+        span {
+           border-bottom: 2px solid $lgreen; 
+           padding-top:1px;
+           display:block;
+           clear: none;
+        }
     }
+
+    .icon-twitter, .icon-github, .icon-dribbble, .icon-envelope {
+        color: $lgreen;
+        font-size: .8em;
+        padding-left: .5em;
+    }
+
     
-    a:hover {
-        color: $red;
+    a:hover, a:focus{
+        color: $mgreen;
+
+        span {
+
+            border-bottom: 2px solid $mgreen;
+        }
     }
 
     p {
@@ -271,12 +389,16 @@ aside {
         float: left;
 
         a {
+            text-decoration: none;
             font-family: 'Aller', Arial, sans-serif;
             color: $dgreen;
+            border-bottom: 2px solid $dgreen;
         }
 
-        a:hover {
-            color: $red;
+        a:hover, a:focus{
+            color: $mgreen;
+            border-bottom: 2px solid $mgreen;
+
         }
     }
 }
