@@ -149,11 +149,9 @@ html, body {
 body {
     background-color: $lgreen;
     position: relative;
-    font-size: 18px;
+    font-size: 2.2vh;
     width:100%;
     padding: 2% 2% 2% 2%;
-
-
 }
 
 
@@ -191,6 +189,7 @@ h1 {
 
 h2 {
     color: $lgreen;
+    display:block;
     font-size: 2.4em;
     margin: 0;
     text-shadow: 6px 2px #101616;
@@ -201,22 +200,22 @@ h3 {
     font-size: 1.5em;
     margin: 0;
     text-shadow: 6px 2px #101616;
-    padding-bottom: 1.2em;
+    padding: 0 10% 1.2em 10%;
 }
 
 
 
 .plant {
     margin-left: 44%;
-    padding: 2em 0;
+    padding: 36px 0;
     position: absolute;
     transform:translateY(-50%) scale(1);
-    top:50%;
+    top:52%;
 
     .leaf-left{
         position: absolute;
-        top: 1.875em;
-        left: -1.563em;
+        top: 33px;
+        left: -28px;
         transform: rotate(16deg);
             -ms-transform: rotate(16deg);
             -webkit-transform: rotate(16deg);
@@ -229,8 +228,8 @@ h3 {
 
     .leaf-right {
         position: absolute;
-        top: 2.5em;
-        left: 6.5em;
+        top: 45px;
+        left: 117px;
         transform: rotate(30deg);
             -ms-transform: rotate(30deg);
             -webkit-transform: rotate(30deg);
@@ -242,8 +241,8 @@ h3 {
 
     .shadow-left {
         position: absolute;
-        bottom:2.7em;
-        left: -1.563em;
+        bottom:48px;
+        left: -28px;
         animation-name: lshadow;
         animation-duration: 3s;
         animation-delay: 1s;
@@ -252,17 +251,56 @@ h3 {
 
     .shadow-right {
         position: absolute;
-        bottom:3.2em;
-        left: 8.5em;
+        bottom:57px;
+        left: 153px;
         animation-name: rshadow;
         animation-duration: 3s;
         animation-delay: 3s;
         -webkit-animation-fill-mode: forwards;
     }
-
-
 }
 
+@media screen and ( max-height: 870px ) {
+    .plant {
+        transform:translateY(-50%) scale(.8);
+    }
+}
+
+
+@media screen and ( max-height: 870px ) {
+    .plant {
+        transform:translateY(-50%) scale(.8);
+    }
+}
+
+@media screen and ( max-height: 650px ) {
+    .plant {
+        transform:translateY(-50%) scale(.5);
+    }
+}
+
+@media screen and ( max-height: 530px ) {
+    
+    html, body {
+        height:880px;
+    }
+
+    body{
+        font-size: 16px; 
+    }
+
+    main {
+        height: 800px
+    }
+
+    aside {
+        height: 80px;
+    }
+
+    .plant {
+        transform:translateY(-50%) scale(1);
+    }
+}
 
 
 @keyframes lshadow{
@@ -378,7 +416,7 @@ aside {
     .skyline {
         position: relative;
         float: left;
-        width: 10em;
+        height: 80%;
         margin: 0 0 0 20%;
         transform: translateY(-50%);
         top: 50%;
@@ -386,8 +424,9 @@ aside {
 
     p {
         font-family: 'Aller', Arial, sans-serif;
-        font-family: 1em;
+        font-size: .9em;
         color: $dgreen;
+        line-height: 160%;
         margin-top: 0;
         text-align: left;
         padding-left:2em;
