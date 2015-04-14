@@ -472,7 +472,7 @@ aside {
     }
 
     main {
-        height: 800px
+        height: 740px
     }
 
     aside {
@@ -485,7 +485,7 @@ aside {
 }
 
 
-@media screen and ( max-width: 700px ) {
+@media screen and ( max-width: 720px ) {
 
     html, body {
         height:880px;
@@ -496,15 +496,21 @@ aside {
     }
 
     main {
-        height: 800px
+        height: 760px
     }
 
     aside {
         height: 210px;
+        margin-bottom: 2%;
     }
 
+    h1, h2, h3 {
+        text-shadow: 4px 1px #101616;
+    }
+
+
     .plant {
-        transform:translateY(-50%) scale(1);
+        transform:translateY(-50%) scale(.8);
         top: 47%;
     }
 
@@ -519,7 +525,7 @@ aside {
         }
 
         p {
-            font-size: 1em;
+            font-size: 1.2em;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
@@ -532,12 +538,7 @@ aside {
         }
         
     }
-}
 
-
-
-
-@media screen and ( max-width: 620px ) {
     .lisa {
         margin-left: 10%;
 
@@ -555,9 +556,16 @@ aside {
             margin-bottom: .5em;
         }
     }
+   
+    .lisa, .scott {
+
+        .icon-dribbble, .icon-envelope, .icon-github, .icon-twitter {
+            font-size: 1em;
+            padding: .5em .6em;
+        }
+    }
 
 }
-
 
 
 @media screen and ( max-width: 520px ) {
@@ -567,9 +575,26 @@ aside {
     }
 
     .plant {
-        margin-left: 26%;
+        margin-left: 28%;
         transform:translateY(-50%) scale(.8);
     }
+
+    .lisa {
+        padding-top: 1.4em;
+    }
+
+    aside {
+        p {
+            font-size: 1em;
+        }
+    }
 }
+
+@media screen and ( max-width: 400px ) {
+    .plant {
+        margin-left: 23%;
+    }
+}
+
 
 
