@@ -260,49 +260,6 @@ h3 {
     }
 }
 
-@media screen and ( max-height: 870px ) {
-    .plant {
-        transform:translateY(-50%) scale(.8);
-    }
-}
-
-
-@media screen and ( max-height: 870px ) {
-    .plant {
-        transform:translateY(-50%) scale(.8);
-    }
-}
-
-@media screen and ( max-height: 650px ) {
-    .plant {
-        transform:translateY(-50%) scale(.5);
-    }
-}
-
-@media screen and ( max-height: 530px ) {
-    
-    html, body {
-        height:880px;
-    }
-
-    body{
-        font-size: 16px; 
-    }
-
-    main {
-        height: 800px
-    }
-
-    aside {
-        height: 80px;
-    }
-
-    .plant {
-        transform:translateY(-50%) scale(1);
-    }
-}
-
-
 @keyframes lshadow{
   0%   { transform: translateX(0%) scale(.8,.8); }
   10%  { transform: translateX(-86%) scale(1.05,1.05); }
@@ -448,6 +405,170 @@ aside {
             border-bottom: 2px solid $mgreen;
 
         }
+    }
+}
+
+
+
+@media screen and ( max-height: 870px ) {
+    .plant {
+        transform:translateY(-50%) scale(.8);
+    }
+}
+
+
+@media screen and ( max-height: 870px ) {
+    .plant {
+        transform:translateY(-50%) scale(.8);
+    }
+}
+
+@media screen and ( max-height: 650px ) {
+    .plant {
+        transform:translateY(-50%) scale(.5);
+    }
+}
+
+
+@media screen and ( max-width: 870px ) {
+    body {
+        font-size: 1.8vh;
+    }
+
+    .plant {
+        margin-left: 38%;
+    }
+
+    .attribution {
+        a {
+            font-size: 1.2em;
+        }
+    }
+
+    aside {
+
+        .skyline {
+            margin: 0 0 0 10%;
+        }
+
+        p {
+            font-size: 1.2em;
+            width: calc(80% - 10em);
+        }
+    }
+}
+
+
+
+
+@media screen and ( max-height: 530px ) {
+    
+    html, body {
+        height:880px;
+    }
+
+    body{
+        font-size: 16px; 
+    }
+
+    main {
+        height: 800px
+    }
+
+    aside {
+        height: 80px;
+    }
+
+    .plant {
+        transform:translateY(-50%) scale(1);
+    }
+}
+
+
+@media screen and ( max-width: 700px ) {
+
+    html, body {
+        height:880px;
+    }
+
+    body{
+        font-size: 14px; 
+    }
+
+    main {
+        height: 800px
+    }
+
+    aside {
+        height: 210px;
+    }
+
+    .plant {
+        transform:translateY(-50%) scale(1);
+        top: 47%;
+    }
+
+    aside {
+        .skyline {
+            top: 5em;
+            height: 80px;
+            display: block;
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            font-size: 1em;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left:0;
+            float:none;
+            width: 100%;
+            padding: 0 10%;
+            top:5.5em;
+
+        }
+        
+    }
+}
+
+
+
+
+@media screen and ( max-width: 620px ) {
+    .lisa {
+        margin-left: 10%;
+
+        span {
+            display: block;
+            margin-bottom: .5em;
+        }
+    }
+
+    .scott {
+        margin-right:10%;
+
+        span {
+            display: block;
+            margin-bottom: .5em;
+        }
+    }
+
+}
+
+
+
+@media screen and ( max-width: 520px ) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .plant {
+        margin-left: 26%;
+        transform:translateY(-50%) scale(.8);
     }
 }
 
